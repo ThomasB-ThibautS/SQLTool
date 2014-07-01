@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><Button layoutX="242.1875" layoutY="328.5" mnemonicParsing="false" text="Se connecter" /><Label layoutX="131.0" layoutY="103.0" text="IP de l'hôte: " /><Label layoutX="139.0" layoutY="241.0" text="Password: " /><PasswordField layoutX="208.0" layoutY="237.0" /><TextField layoutX="208.0" layoutY="196.0" /><TextField layoutX="208.0" layoutY="99.0" /><Label alignment="TOP_CENTER" layoutX="214.0" layoutY="14.0" text="Connexion" textAlignment="CENTER">
+<font>
+<Font size="29.0" />
+</font></Label><Label layoutX="164.0" layoutY="200.0" text="Login: " /><TextField layoutX="208.0" layoutY="280.0" /><Label layoutX="139.0" layoutY="284.0" text="Port: " />
+</children></Pane>
