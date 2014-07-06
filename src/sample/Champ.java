@@ -15,7 +15,6 @@ public class Champ {
     private String type;
     private int longueur;
     private boolean vide;
-    private static ArrayList<Champ> lesChamps = new ArrayList<Champ>();   //Contient la liste des objets Champ
 
     public int getId() {
         return id;
@@ -87,13 +86,5 @@ public class Champ {
 
     public void setVide(boolean vide) {
         this.vide = vide;
-    }
-
-    public static ArrayList<Champ> getLesChamps() {
-        return lesChamps;
-    }
-
-    public static void setLesChamps(ArrayList<Champ> lesChamps) {
-        Champ.lesChamps = lesChamps;
     }
 }
