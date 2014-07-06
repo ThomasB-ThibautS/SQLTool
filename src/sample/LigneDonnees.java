@@ -10,11 +10,6 @@ public class LigneDonnees {
     private int id;
     private static ArrayList<Donnee> lesDonnees = new ArrayList<Donnee>();   //Contient la liste des objets donnees
 
-    /*constructeur*/
-
-    public LigneDonnees(int id) {
-        this.id = id;
-    }
 
     /*getter & setter*/
 
