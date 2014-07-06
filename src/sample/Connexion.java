@@ -47,14 +47,14 @@ public class Connexion {
         }
         return connection;
     }
-    public static boolean connexion (String login, String mdp, String url, String bd, String port) {  //Lancement de la connexion avec les champs renseignés dans connexion.fxml
+    public static boolean connexion(String login, String mdp, String url, String bd, String port) {  //Lancement de la connexion avec les champs renseignés dans connexion.fxml
         if(port.equals("")){
             port = "3306";
         }
         con = Connexion.getConnection(login, mdp, url, bd, port);
         return connexionReussie;
     }
-    public static boolean connexion (String login, String mdp, String url, String port) {  //Lancement de la connexion avec les champs renseignés dans connexion.fxml
+    public static boolean connexion(String login, String mdp, String url, String port) {  //Lancement de la connexion avec les champs renseignés dans connexion.fxml
         if(port.equals("")){
             port = "3306";
         }

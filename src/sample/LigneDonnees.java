@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class LigneDonnees {
     /*variable*/
     private int id;
-    private static ArrayList<Donnees> lesDonnees = new ArrayList<Donnees>();   //Contient la liste des objets donnees
+    private static ArrayList<Donnee> lesDonnees = new ArrayList<Donnee>();   //Contient la liste des objets donnees
 
     /*constructeur*/
 
@@ -26,11 +26,16 @@ public class LigneDonnees {
         this.id = id;
     }
 
-    public static ArrayList<Donnees> getLesDonnees() {
+    public static ArrayList<Donnee> getLesDonnees() {
         return lesDonnees;
     }
 
-    public static void setLesDonnees(ArrayList<Donnees> lesDonnees) {
+    public static void setLesDonnees(ArrayList<Donnee> lesDonnees) {
         LigneDonnees.lesDonnees = lesDonnees;
+    }
+
+    /*Fonctions */
+    public static void ajouterDonnee(Donnee d){
+        lesDonnees.add(d);
     }
 }

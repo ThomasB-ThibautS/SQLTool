@@ -36,14 +36,14 @@ public class Controller implements Initializable {
             @Override
             public  void handle(ActionEvent e) {
                 boolean reussie = Connexion.connexion(tx_login.getText(), tx_mdp.getText(), tx_url.getText(), tx_port.getText());
-                if (reussie == false) {
+                if (!reussie) {
                     tx_login.clear();
                     tx_mdp.clear();
                     tx_url.clear();
                     tx_port.clear();
                     lb_message.setText("Mot de passe ou Adresse incorrect");
                     lb_message.setTextFill(Color.rgb(210, 39, 30));
-                }  else {
+                }else{
                     /*URL location = getClass().getResource("sample.fxml");
                     FXMLLoader fxmlLoader = new FXMLLoader();
                     fxmlLoader.setLocation(location);

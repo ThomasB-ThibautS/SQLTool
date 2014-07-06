@@ -12,7 +12,7 @@ public class Table {
     private int nblignedonnees;
     private String nom;
     private static ArrayList<Champ> lesChamps = new ArrayList<Champ>();   //Contient la liste des objets Champ
-    private static ArrayList<LigneDonnees> ListDonnes = new ArrayList<LigneDonnees>();   //Contient la liste des objets ligneDonnee
+    private static ArrayList<LigneDonnees> listDonnees = new ArrayList<LigneDonnees>();   //Contient la liste des objets ligneDonnee
 
     /*constructeur*/
     public Table(int id, int nbchamps, int nblignedonnees, String nom) {
@@ -64,10 +64,20 @@ public class Table {
     }
 
     public static ArrayList<LigneDonnees> getListDonnes() {
-        return ListDonnes;
+        return listDonnees;
     }
 
     public static void setListDonnes(ArrayList<LigneDonnees> listDonnes) {
-        ListDonnes = listDonnes;
+        listDonnees = listDonnes;
     }
+
+    /* Fonctions */
+    public static void ajouterChamp(Champ c){
+        lesChamps.add(c);
+    }
+
+    public static void ajouterLigneDonnees(LigneDonnees l){
+        listDonnees.add(l);
+    }
+
 }

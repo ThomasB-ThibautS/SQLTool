@@ -3,13 +3,13 @@ package sample;
 /**
  * Created by pc thomas on 06/07/2014.
  */
-public class Donnees {
+public class Donnee {
     /*variables*/
     private int id;
     private String valeur;
 
     /*constructeur*/
-    public Donnees(int id, String valeur) {
+    public Donnee(int id, String valeur) {
         this.id = id;
         this.valeur = valeur;
     }
