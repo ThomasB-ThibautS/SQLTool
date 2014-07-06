@@ -1,0 +1,5 @@
+#ignore le répertoire .idea
+.idea/
+
+SQLTool.iml
+sqltool.zargo
